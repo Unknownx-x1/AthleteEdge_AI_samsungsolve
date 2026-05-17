@@ -82,7 +82,7 @@ const InjuryChecker = ({ language }) => {
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Sport' : 'खेल'}</label>
                   <select 
                     required 
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, sport: e.target.value})}
                   >
                     <option value="">{isEn ? 'Select...' : 'चुनें...'}</option>
@@ -96,7 +96,7 @@ const InjuryChecker = ({ language }) => {
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Body Part' : 'शरीर का अंग'}</label>
                   <select 
                     required 
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, bodyPart: e.target.value})}
                   >
                     <option value="">{isEn ? 'Select...' : 'चुनें...'}</option>
@@ -126,14 +126,14 @@ const InjuryChecker = ({ language }) => {
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Age' : 'आयु'}</label>
                   <input type="number" required min="5" max="100"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, age: e.target.value})}
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Weight (kg)' : 'वजन (किग्रा)'}</label>
                   <input type="number" required min="20" max="200"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, weight: e.target.value})}
                   />
                 </div>
@@ -143,14 +143,14 @@ const InjuryChecker = ({ language }) => {
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Training (Days/Wk)' : 'प्रशिक्षण (दिन/सप्ताह)'}</label>
                   <input type="number" required min="0" max="7"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, trainingDays: e.target.value})}
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Hours/Week' : 'घंटे/सप्ताह'}</label>
                   <input type="number" required min="0" max="50"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, trainingHours: e.target.value})}
                   />
                 </div>
@@ -177,7 +177,7 @@ const InjuryChecker = ({ language }) => {
                 <label className="block text-sm font-medium mb-1">{isEn ? 'Describe your pain' : 'अपने दर्द का वर्णन करें'}</label>
                 <textarea 
                   required rows="3"
-                  className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary resize-none"
+                  className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm transition-colors resize-none"
                   placeholder={isEn ? "E.g., Sharp pain when I bend my knee..." : "जैसे, जब मैं अपना घुटना मोड़ता हूं तो तेज दर्द..."}
                   onChange={(e) => setFormData({...formData, description: e.target.value})}
                 ></textarea>

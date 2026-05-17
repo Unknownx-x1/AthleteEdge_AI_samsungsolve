@@ -109,7 +109,7 @@ const NutritionPlanner = ({ language }) => {
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Sport' : 'खेल'}</label>
                   <select 
                     required 
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, sport: e.target.value})}
                   >
                     <option value="">{isEn ? 'Select...' : 'चुनें...'}</option>
@@ -123,7 +123,7 @@ const NutritionPlanner = ({ language }) => {
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Region' : 'क्षेत्र'}</label>
                   <select 
                     required 
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, region: e.target.value})}
                   >
                     <option value="North">North India</option>
@@ -151,21 +151,21 @@ const NutritionPlanner = ({ language }) => {
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Age' : 'आयु'}</label>
                   <input type="number" required min="10" max="80"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, age: e.target.value})}
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Weight(kg)' : 'वजन(kg)'}</label>
                   <input type="number" required min="30" max="150"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, weight: e.target.value})}
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">{isEn ? 'Height(cm)' : 'ऊंचाई(cm)'}</label>
                   <input type="number" required min="100" max="250"
-                    className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary"
+                    className="w-full bg-background border border-[#1E3A5F] rounded-md px-3 py-2 text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary shadow-sm transition-colors"
                     onChange={(e) => setFormData({...formData, height: e.target.value})}
                   />
                 </div>
